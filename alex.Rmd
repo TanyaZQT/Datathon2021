@@ -1,0 +1,27 @@
+---
+title: "main"
+output: pdf_document
+---
+
+```{r}
+library(foreign)
+library(tidyverse)
+library(inspectdf)
+
+wave2<- read.spss("data/W2 Merged Data/2w-3rd_release_all/merge/Wave2_20170724.sav", 
+                  to.data.frame=TRUE)
+attach(wave2)
+wave2 %>%
+  inspect_types()
+
+```
+
+```{r}
+
+```
+
+
+# Important reference articles
+https://197travelstamps.com/safest-countries-in-asia/
+- Safety scores for each country in Asia. Mostly based on the perspective of tourists.
+
